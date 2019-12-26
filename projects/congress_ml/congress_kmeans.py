@@ -131,7 +131,7 @@ def main():
     X_pca = pca.fit_transform(X)
 
     # Plot clusters
-    fig, ax = plt.subplots(dpi=400)
+    fig, ax = plt.subplots(dpi=120)
     sns.set()
     ax.scatter(X_pca[right_dem_idx][:, 0], X_pca[right_dem_idx][:, 1], c='b', alpha=0.75,
                label="consistent dem assignment")

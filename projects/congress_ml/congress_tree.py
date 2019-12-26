@@ -103,7 +103,7 @@ def main():
         train_acc_ls.append(accuracy(t, X_train, y_train))
         test_acc_ls.append(accuracy(t, X_test, y_test))
 
-    fig, ax = plt.subplots(dpi=400)
+    fig, ax = plt.subplots(dpi=120)
     sns.set()
     ax.plot(depth_range, train_acc_ls, '.-', label='training')
     ax.plot(depth_range, test_acc_ls, '.-', label='testing')

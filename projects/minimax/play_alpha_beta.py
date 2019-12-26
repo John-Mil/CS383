@@ -18,7 +18,6 @@ def time_games(board_size, min_agent, max_agent):
 
 if __name__ == '__main__':
 
-    ###########################################################################
     #  Test alpha-beta pruning
 
     min_agent = MinimaxAgent(depth_limit=3, eval_fn=evaluation_fns.open_cells_diff)
